@@ -1,3 +1,4 @@
+import 'package:first/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'Forms/Form.dart';
@@ -29,6 +30,8 @@ class MyApp extends StatelessWidget {
         home: SplashScreen(),
         initialRoute: SplashScreen.id,
         routes: {
+          Home.id: (context) => const Home(),
+          Splash.id: (ctx) => const Splash(),
           SplashScreen.id: (context) => SplashScreen(),
           LoginScreen.id:(context) =>LoginScreen(),
           HomeScreen.id: (context) =>HomeScreen(),
